@@ -1,0 +1,1929 @@
+/* Screen reader only content */
+.sr-only {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+border: 0;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+.date-option,
+.time-slot,
+.tier-option,
+.addon-item {
+border-width: 3px;
+}
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+* {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+}
+}
+</style>
+</head>
+
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header>
+        <nav>
+            <a href="#home" class="logo">
+                <!-- REPLACE THIS WITH YOUR LOGO: -->
+                <img src="images/test.png" alt="NailzbyMaze Logo" style="height: 35px; width: auto; margin-right: 8px;">
+                <!-- OR KEEP AS TEXT: NailzbyMaze -->
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" role="list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book</a></li>
+                <li><a href="#policies">Policies</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <!-- REPLACE THIS WITH YOUR MAIN LOGO: -->
+                <img src="images/test2.png" alt="NailzbyMaze"
+                    style="width: 100%; max-width: 500px; height: auto; margin-bottom: 2rem;">
+                <!-- OR KEEP AS TEXT: <h1>NailzbyMaze</h1> -->
+                <p>Certified nail technician bringing you premium nail artistry in Orange County. From classic elegance
+                    to bold creativity, your perfect nails await.</p>
+                <a href="#booking" class="cta-button">
+                    <i class="fas fa-calendar-plus"></i>
+                    Book Your Appointment
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <h2><img src="images/test.png" alt="NailzbyMaze Logo"
+                        style="height: 35px; width: auto; margin-right: 8px;"></i> About Me</h2>
+                <p>Hi, I'm Jasmine-aka NailzbyMaze! I specialize in Gel-X and structured gel manicures. I've been doing
+                    nails since 2021 and officially launched my business after graduating from cosmetology school in
+                    November 2024.</p>
+                <p>I love challenging myself with fun freestyles and mix-and-match sets, and I always prioritize cuticle
+                    care and cleanliness in my salon suite. Outside of nails, I'm into reading and gaming so feel free
+                    to nerd out with me in the chair, because we can talk about just about anything!</p>
+                <p>Ready to treat yourself? Go ahead and book your next set-I can't wait to bless your hands soon!</p>
+
+
+
+                <div class="credentials">
+                    <div class="credential">
+                        <i class="fas fa-certificate"></i>
+                        <h3>Certified</h3>
+                        <p>Licensed Nail Technician</p>
+                    </div>
+                    <div class="credential">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Located</h3>
+                        <p>Orange County, CA</p>
+                    </div>
+                    <div class="credential">
+                        <i class="fas fa-star"></i>
+                        <h3>Premium</h3>
+                        <p>High-Quality Products</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2><i class="fas fa-sparkles"></i> Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-paint-brush"></i> Gel Manicure</h3>
+                    <p>Treat your hands to long-lasting, chip-resistant shine with our Gel manicure. This service
+                        includes your choice of premium gel polish cured under UV/LED light for a glossy finish that
+                        lasts up to 2-3 weeks.</p>
+                    <div class="service-details">
+                        <span class="duration"><i class="fas fa-clock"></i> 45 minutes</span>
+                        <span class="price">$40</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3><i class="fas fa-shield-alt"></i> Structured Gel Manicure</h3>
+                    <p>A long-lasting enhancement designed to add strength and durability to your natural nails. Uses
+                        hard gel to create a strong, flexible overlay that prevents breakage while maintaining a natural
+                        look. Perfect for added support without extensions.</p>
+                    <div class="service-details">
+                        <span class="duration"><i class="fas fa-clock"></i> 1 hour</span>
+                        <span class="price">$70</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3><i class="fas fa-magic"></i> Gel Extensions (Gel-X)</h3>
+                    <p>Achieve effortlessly elegant length with Après Gel-X extensions, the modern standard in nail
+                        enhancement. These lightweight, full-coverage soft gel tips provide lasting strength and a
+                        flawless, natural look.</p>
+                    <div class="service-details">
+                        <span class="duration"><i class="fas fa-clock"></i> 1 hour</span>
+                        <span class="price">$75</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3><i class="fas fa-redo-alt"></i> Fill</h3>
+                    <p>For returning clients only, this maintenance service refreshes your nails within 3 weeks of your
+                        previous appointment. Using premium builder gel, we carefully fill and rebalance your existing
+                        enhancements.</p>
+                    <div class="service-details">
+                        <span class="duration"><i class="fas fa-clock"></i> 1 hour</span>
+                        <span class="price">$65</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3><i class="fas fa-eraser"></i> Foreign Removal</h3>
+                    <p>For clients arriving with enhancements from another salon, we provide careful soak-off to protect
+                        your natural nails. Because products and techniques vary, extra time and care is needed for
+                        safe, thorough removal.</p>
+                    <div class="service-details">
+                        <span class="duration"><i class="fas fa-clock"></i> 45 minutes</span>
+                        <span class="price">$20</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking">
+            <h2><i class="fas fa-calendar-check"></i> Book Your Appointment</h2>
+
+            <div class="booking-container">
+                <div class="error-message" id="errorMessage" role="alert" aria-live="polite"></div>
+                <div class="success-message" id="successMessage" role="alert" aria-live="polite"></div>
+
+                <!-- Step 1: Service Selection -->
+                <div class="booking-step" id="serviceSelection">
+                    <div class="step-indicator" aria-label="Step 1">1</div>
+                    <div class="step-title">
+                        <i class="fas fa-hand-sparkles" aria-hidden="true"></i> Step 1: Choose Your Main Service
+                    </div>
+                    <p>Select your primary nail service and any additional addons you would like. After selecting your
+                        services you will be redirected to
+                        calendly to pick an available time and date. Please refer to my policies listed above before
+                        booking.</p>
+
+                    <div class="tier-selection" id="tierSelection" role="radiogroup"
+                        aria-labelledby="service-selection-title">
+                        <button class="tier-option" data-tier="gel-manicure" data-duration="0.75" data-price="40"
+                            role="radio" aria-checked="false" tabindex="0">
+                            <h4>Gel Manicure</h4>
+                            <div class="tier-duration">45 Minutes</div>
+                            <p>Long-lasting, chip-resistant gel polish with UV/LED curing</p>
+                            <div style="color: var(--primary-green); font-weight: bold; margin-top: 0.5rem;">$40</div>
+                        </button>
+                        <button class="tier-option" data-tier="structured-gel" data-duration="1" data-price="70"
+                            role="radio" aria-checked="false" tabindex="-1">
+                            <h4>Structured Gel Manicure</h4>
+                            <div class="tier-duration">1 Hour</div>
+                            <p>Hard gel overlay for strength and durability on natural nails</p>
+                            <div style="color: var(--primary-green); font-weight: bold; margin-top: 0.5rem;">$70</div>
+                        </button>
+                        <button class="tier-option" data-tier="gel-extensions" data-duration="1" data-price="75"
+                            role="radio" aria-checked="false" tabindex="-1">
+                            <h4>Gel Extensions (Gel-X)</h4>
+                            <div class="tier-duration">1 Hour</div>
+                            <p>Lightweight Après Gel-X extensions for elegant length</p>
+                            <div style="color: var(--primary-green); font-weight: bold; margin-top: 0.5rem;">$75</div>
+                        </button>
+                        <button class="tier-option" data-tier="fill" data-duration="1" data-price="65" role="radio"
+                            aria-checked="false" tabindex="-1">
+                            <h4>Fill (Returning Clients)</h4>
+                            <div class="tier-duration">1 Hour</div>
+                            <p>Maintenance service for existing enhancements (within 3 weeks)</p>
+                            <div style="color: var(--primary-green); font-weight: bold; margin-top: 0.5rem;">$65</div>
+                        </button>
+                    </div>
+
+                    <div class="addons-section">
+                        <h4 id="addons-title" style="color: var(--primary-green); margin-bottom: 1rem;">
+                            <i class="fas fa-plus-circle" aria-hidden="true"></i> Select Nail Art Tier
+                        </h4>
+                        <p style="margin-bottom: 1.5rem;">Choose your nail art tier (one required). Each tier includes
+                            different design complexities and time requirements:</p>
+
+                        <!-- Tier Dropdown -->
+                        <div class="tier-dropdown">
+                            <button class="tier-dropdown-button" id="tierDropdownBtn" type="button"
+                                aria-expanded="false">
+                                <div>
+                                    <div style="font-weight: bold; color: var(--primary-green);">Select Nail Art Tier
+                                    </div>
+                                    <div style="font-size: 0.9rem; color: var(--primary-brown); margin-top: 0.25rem;"
+                                        id="selectedTierSummary">Click to view options</div>
+                                </div>
+                                <i class="fas fa-chevron-down dropdown-arrow" aria-hidden="true"></i>
+                            </button>
+
+                            <div class="tier-dropdown-content" id="tierDropdownContent">
+                                <div class="tier-option-dropdown" data-tier="tier1" data-duration="1" data-price="15">
+                                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=120&h=90&fit=crop&crop=center"
+                                        alt="Tier 1 nail art example" class="tier-image" loading="lazy">
+                                    <div class="tier-details">
+                                        <div class="tier-title">Tier 1 Nail Art</div>
+                                        <div class="tier-price-duration">+1 hour • $15</div>
+                                        <div class="tier-description">
+                                            Minimal art, single color chrome, single color airbrush, simple line work,
+                                            and small gem details.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tier-option-dropdown" data-tier="tier2" data-duration="1.5" data-price="25">
+                                    <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=120&h=90&fit=crop&crop=center"
+                                        alt="Tier 2 nail art example" class="tier-image" loading="lazy">
+                                    <div class="tier-details">
+                                        <div class="tier-title">Tier 2 Nail Art</div>
+                                        <div class="tier-price-duration">+1.5 hours • $25</div>
+                                        <div class="tier-description">
+                                            Up to 3 different designs, 2 color airbrush, 2 color chrome, cat-eye gel,
+                                            minimal 3D art, intermediate line work, gems and small charms.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tier-option-dropdown" data-tier="tier3" data-duration="2" data-price="35">
+                                    <img src="https://images.unsplash.com/photo-1583198786900-6c2f8d490d0c?w=120&h=90&fit=crop&crop=center"
+                                        alt="Tier 3 nail art example" class="tier-image" loading="lazy">
+                                    <div class="tier-details">
+                                        <div class="tier-title">Tier 3 Nail Art</div>
+                                        <div class="tier-price-duration">+2 hours • $35</div>
+                                        <div class="tier-description">
+                                            Maximalist sets, 10 different designs, 3D/chrome/airbrush throughout,
+                                            sculpted 3D gel, hand-painted art, and advanced line work.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tier-option-dropdown" data-tier="tier4" data-duration="2.5" data-price="45">
+                                    <img src="https://images.unsplash.com/photo-1599948128020-9a44b06b5811?w=120&h=90&fit=crop&crop=center"
+                                        alt="Tier 4 nail art example" class="tier-image" loading="lazy">
+                                    <div class="tier-details">
+                                        <div class="tier-title">Tier 4 Nail Art</div>
+                                        <div class="tier-price-duration">+2.5 hours • $45</div>
+                                        <div class="tier-description">
+                                            Full hand-painted art, character art, realism, geometric shapes, large
+                                            charms and junk nails.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Foreign Removal Option -->
+                        <h4 style="color: var(--primary-green); margin: 2rem 0 1rem 0;">
+                            <i class="fas fa-plus" aria-hidden="true"></i> Additional Services
+                        </h4>
+
+                        <div role="group" aria-labelledby="addons-title">
+                            <button class="addon-item" data-service="removal" data-duration="0.75" data-price="20"
+                                role="checkbox" aria-checked="false" tabindex="0">
+                                <div style="display: flex; align-items: center;">
+                                    <div class="addon-checkbox" aria-hidden="true"></div>
+                                    <div class="addon-details">
+                                        <div class="addon-name">Foreign Removal</div>
+                                        <div class="addon-time">+45 minutes</div>
+                                    </div>
+                                </div>
+                                <div class="addon-price">+$20</div>
+                            </button>
+
+                            <button class="addon-item" data-service="soak-off" data-duration="0.5" data-price="0"
+                                role="checkbox" aria-checked="false" tabindex="0">
+                                <div style="display: flex; align-items: center;">
+                                    <div class="addon-checkbox" aria-hidden="true"></div>
+                                    <div class="addon-details">
+                                        <div class="addon-name">Soak Off (Returning Clients)</div>
+                                        <div class="addon-time">+30 minutes</div>
+                                    </div>
+                                </div>
+                                <div class="addon-price">Free</div>
+                            </button>
+
+
+                        </div>
+
+                        <!-- Appointment Summary -->
+                        <div class="appointment-summary" id="appointmentSummary" style="display: none;"
+                            aria-live="polite">
+                            <h3><i class="fas fa-receipt" aria-hidden="true"></i> Service Summary</h3>
+                            <div id="summaryDetails"></div>
+                            <div class="summary-total">
+                                <div class="summary-row">
+                                    <span>Estimated Duration:</span>
+                                    <span id="totalDuration">0 hours</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>Estimated Cost:</span>
+                                    <span id="totalCost">$0</span>
+                                </div>
+                            </div>
+                            <button class="book-now-btn" id="bookNowBtn" disabled aria-describedby="booking-help">
+                                <i class="fas fa-calendar-plus" aria-hidden="true"></i>
+                                Book Appointment
+                            </button>
+                            <div id="booking-help" class="sr-only">This will open a Calendly booking popup with your
+                                service
+                                details pre-filled</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="policy-note" style="margin-top: 3rem;">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Important Notice</h4>
+                    <p><strong>Foreign Removal Required:</strong> If you have enhancements from another salon, you must
+                        book a foreign removal service. This ensures safe removal and protects your natural nail health.
+                        Attempting to remove enhancements yourself may cause damage and could affect the quality of your
+                        new service.</p>
+                </div>
+        </section>
+
+        <section id="policies" class="policies">
+            <h2><i class="fas fa-clipboard-list"></i> Policies</h2>
+            <div class="policies-content">
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">
+                    Please review these important policies before booking your appointment to ensure the best experience
+                    for everyone.
+                </p>
+
+                <div class="policy-grid">
+                    <div class="policy-card">
+                        <h3><i class="fas fa-calendar-alt"></i> Booking & Scheduling</h3>
+                        <ul>
+                            <li>All appointments must be booked online through our Calendly system</li>
+                            <li>A valid phone number and email are required for booking confirmation</li>
+                            <li>Appointment times are estimated - complex designs may require additional time</li>
+                            <li>Same-day bookings may not always be available</li>
+                            <li>Please arrive on time - late arrivals may result in shortened service time</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-card">
+                        <h3><i class="fas fa-credit-card"></i> Payment & Pricing</h3>
+                        <ul>
+                            <li>Payment is due at the time of service</li>
+                            <li>We accept cash, Venmo, Zelle, and major credit cards</li>
+                            <li>Prices may vary based on nail length, condition, and design complexity</li>
+                            <li>Tips are appreciated but never required</li>
+                            <li>No refunds on completed services</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-card">
+                        <h3><i class="fas fa-times-circle"></i> Cancellation Policy</h3>
+                        <ul>
+                            <li>Please provide at least 24 hours notice for cancellations</li>
+                            <li>No-shows and same-day cancellations may result in booking restrictions</li>
+                            <li>Emergency cancellations will be handled on a case-by-case basis</li>
+                            <li>Repeated no-shows may result in a required deposit for future bookings</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-card">
+                        <h3><i class="fas fa-shield-virus"></i> Health & Safety</h3>
+                        <ul>
+                            <li>Please do not book if you are feeling unwell</li>
+                            <li>All tools are properly sanitized between clients</li>
+                            <li>Single-use items are disposed of after each service</li>
+                            <li>Please inform us of any allergies or skin sensitivities</li>
+                            <li>Pregnant clients: please consult your doctor before gel services</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-card">
+                        <h3><i class="fas fa-hand-sparkles"></i> Nail Care Guidelines</h3>
+                        <ul>
+                            <li>For fills, appointments must be within 3 weeks of last service</li>
+                            <li>Cuticle cutting is included only when necessary for nail health</li>
+                            <li>We reserve the right to refuse service on damaged or infected nails</li>
+                            <li>Aftercare instructions will be provided to maintain your manicure</li>
+                            <li>Touch-ups within 48 hours are complimentary for application issues</li>
+                        </ul>
+                    </div>
+
+                    <div class="policy-card">
+                        <h3><i class="fas fa-users"></i> Client Experience</h3>
+                        <ul>
+                            <li>Our salon suite is a peaceful, professional environment</li>
+                            <li>Please keep phone conversations brief and considerate</li>
+                            <li>Children must be supervised at all times if brought to appointments</li>
+                            <li>Food and drinks are not permitted in the service area</li>
+                            <li>We love chatting about books, games, and life!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="policy-highlight">
+                    <h3><i class="fas fa-heart"></i> Our Commitment to You</h3>
+                    <p>We are committed to providing exceptional service, maintaining the highest standards of
+                        cleanliness, and creating beautiful nails that you'll love. Your satisfaction and nail health
+                        are our top priorities!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2><i class="fas fa-images" aria-hidden="true"></i> Portfolio</h2>
+            <p>Explore my latest nail artistry and see the beautiful transformations I create for my clients. From
+                elegant everyday looks to show-stopping designs, discover the possibilities for your next appointment.
+            </p>
+
+            <a href="https://www.instagram.com/nailzbymaze" class="portfolio-link" target="_blank"
+                rel="noopener noreferrer">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                View My Work on Instagram
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#booking">Book</a>
+                <a href="#policies">Policies</a>
+                <a href="#portfolio">Portfolio</a>
+            </div>
+            <p>&copy; 2024 NailzbyMaze. All rights reserved. | Certified Nail Technician in Orange County</p>
+        </div>
+    </footer>
+
+    <script>
+        let selectedTier = null;
+        let selectedAddons = [];
+        let selectedNailArtTier = null;
+        let baseDuration = 0;
+        let basePrice = 0;
+
+        // Duration to Calendly event mapping (in hours)
+        const DURATION_EVENT_MAP = {
+            0.75: '45min-appointment',
+            1: '60min-appointment',
+            2: '120min-appointment',
+            2.5: '150min-appointment',
+            3: '180min-appointment',
+            3.5: '210min-appointment',
+            4: '240min-appointment',
+            4.5: '270min-appointment'
+        };
+
+        function getCalendlyEventType(totalDurationHours) {
+            const roundedDuration = Math.round(totalDurationHours * 4) / 4;
+            let eventType = null;
+            const sortedDurations = Object.keys(DURATION_EVENT_MAP).map(d => parseFloat(d)).sort((a, b) => a - b);
+
+            for (const duration of sortedDurations) {
+                if (roundedDuration <= duration) {
+                    eventType = DURATION_EVENT_MAP[duration];
+                    break;
+                }
+            }
+
+            if (!eventType) {
+                eventType = DURATION_EVENT_MAP[Math.max(...sortedDurations)];
+            }
+
+            return eventType;
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            if (errorDiv) {
+                errorDiv.textContent = message;
+                errorDiv.style.display = 'block';
+                errorDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                const successDiv = document.getElementById('successMessage');
+                if (successDiv) successDiv.style.display = 'none';
+
+                setTimeout(() => {
+                    errorDiv.style.display = 'none';
+                }, 5000);
+            }
+        }
+
+        function showSuccess(message) {
+            const successDiv = document.getElementById('successMessage');
+            if (successDiv) {
+                successDiv.textContent = message;
+                successDiv.style.display = 'block';
+
+                const errorDiv = document.getElementById('errorMessage');
+                if (errorDiv) errorDiv.style.display = 'none';
+            }
+        }
+
+        function validateBooking() {
+            if (!selectedTier) {
+                showError('Please select a main service for your appointment.');
+                return false;
+            }
+            if (!selectedNailArtTier) {
+                showError('Please select a nail art tier for your appointment.');
+                return false;
+            }
+            return true;
+        }
+
+        function autoSelectTier1() {
+            const tier1Option = document.querySelector('.tier-option-dropdown[data-tier="tier1"]');
+            if (tier1Option && selectedNailArtTier === null) {
+                const serviceName = tier1Option.querySelector('.tier-title').textContent;
+                const duration = parseFloat(tier1Option.dataset.duration);
+                const price = parseInt(tier1Option.dataset.price);
+                const serviceId = tier1Option.dataset.tier;
+
+                tier1Option.classList.add('selected');
+
+                selectedNailArtTier = serviceId;
+                selectedAddons.push({
+                    id: serviceId,
+                    name: serviceName,
+                    duration: duration,
+                    price: price
+                });
+
+                updateDropdownButton(serviceName, duration, price);
+            }
+        }
+
+        function updateDropdownButton(tierName, duration, price) {
+            const selectedTierSummary = document.getElementById('selectedTierSummary');
+            if (selectedTierSummary) {
+                const priceText = price === 0 ? 'Included' : `$${price}`;
+                selectedTierSummary.textContent = `${tierName} • +${duration}h • ${priceText}`;
+            }
+        }
+
+        function setupDropdownListeners() {
+            const dropdownBtn = document.getElementById('tierDropdownBtn');
+            const dropdownContent = document.getElementById('tierDropdownContent');
+
+            if (!dropdownBtn || !dropdownContent) return;
+
+            dropdownBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                const isOpen = this.getAttribute('aria-expanded') === 'true';
+
+                if (isOpen) {
+                    this.setAttribute('aria-expanded', 'false');
+                    this.classList.remove('active');
+                    dropdownContent.classList.remove('show');
+                } else {
+                    this.setAttribute('aria-expanded', 'true');
+                    this.classList.add('active');
+                    dropdownContent.classList.add('show');
+                }
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!dropdownBtn.contains(e.target) && !dropdownContent.contains(e.target)) {
+                    dropdownBtn.setAttribute('aria-expanded', 'false');
+                    dropdownBtn.classList.remove('active');
+                    dropdownContent.classList.remove('show');
+                }
+            });
+
+            document.querySelectorAll('.tier-option-dropdown').forEach(option => {
+                option.addEventListener('click', function (e) {
+                    e.stopPropagation();
+
+                    const serviceName = this.querySelector('.tier-title').textContent;
+                    const duration = parseFloat(this.dataset.duration);
+                    const price = parseInt(this.dataset.price);
+                    const serviceId = this.dataset.tier;
+
+                    document.querySelectorAll('.tier-option-dropdown').forEach(opt => {
+                        opt.classList.remove('selected');
+                    });
+
+                    if (selectedNailArtTier) {
+                        selectedAddons = selectedAddons.filter(addon => addon.id !== selectedNailArtTier);
+                    }
+
+                    this.classList.add('selected');
+                    selectedNailArtTier = serviceId;
+                    selectedAddons.push({
+                        id: serviceId,
+                        name: serviceName,
+                        duration: duration,
+                        price: price
+                    });
+
+                    updateDropdownButton(serviceName, duration, price);
+
+                    dropdownBtn.setAttribute('aria-expanded', 'false');
+                    dropdownBtn.classList.remove('active');
+                    dropdownContent.classList.remove('show');
+
+                    updateSummary();
+                    showSuccess(`${serviceName} selected! You can still add foreign removal if needed.`);
+                });
+            });
+        }
+
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            const navLinks = document.querySelector('.nav-links');
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+            this.setAttribute('aria-expanded', !isExpanded);
+            navLinks.classList.toggle('active');
+
+            const icon = this.querySelector('i');
+            icon.className = navLinks.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            setupEventListeners();
+            setupDropdownListeners();
+        });
+
+        function setupEventListeners() {
+            // Service tier selection
+            document.querySelectorAll('.tier-option').forEach(tier => {
+                tier.addEventListener('click', function () {
+                    document.querySelectorAll('.tier-option').forEach(t => {
+                        t.classList.remove('selected');
+                        t.setAttribute('aria-checked', 'false');
+                        t.setAttribute('tabindex', '-1');
+                    });
+
+                    this.classList.add('selected');
+                    this.setAttribute('aria-checked', 'true');
+                    this.setAttribute('tabindex', '0');
+
+                    selectedTier = {
+                        name: this.querySelector('h4').textContent,
+                        duration: parseFloat(this.dataset.duration),
+                        price: parseInt(this.dataset.price)
+                    };
+                    baseDuration = selectedTier.duration;
+                    basePrice = selectedTier.price;
+
+                    autoSelectTier1();
+
+                    const serviceSelection = document.getElementById('serviceSelection');
+                    if (serviceSelection) serviceSelection.classList.add('completed');
+
+                    updateSummary();
+                    showSuccess('Main service selected! Tier 1 nail art has been automatically added. You can change tiers or add removal if needed.');
+                });
+            });
+
+            // Foreign removal addon selection
+            document.querySelectorAll('.addon-item').forEach(addon => {
+                addon.addEventListener('click', function () {
+                    const checkbox = this.querySelector('.addon-checkbox');
+                    const serviceName = this.querySelector('.addon-name').textContent;
+                    const duration = parseFloat(this.dataset.duration);
+                    const price = parseInt(this.dataset.price);
+                    const serviceId = this.dataset.service;
+
+                    const isCurrentlySelected = this.getAttribute('aria-checked') === 'true';
+
+                    if (isCurrentlySelected) {
+                        checkbox.classList.remove('checked');
+                        this.classList.remove('selected');
+                        this.setAttribute('aria-checked', 'false');
+                        selectedAddons = selectedAddons.filter(addon => addon.id !== serviceId);
+                    } else {
+                        checkbox.classList.add('checked');
+                        this.classList.add('selected');
+                        this.setAttribute('aria-checked', 'true');
+                        selectedAddons.push({
+                            id: serviceId,
+                            name: serviceName,
+                            duration: duration,
+                            price: price
+                        });
+                    }
+
+                    updateSummary();
+                });
+            });
+        }
+
+        function updateSummary() {
+            if (!selectedTier) return;
+
+            const summaryDiv = document.getElementById('appointmentSummary');
+            const summaryDetails = document.getElementById('summaryDetails');
+            const totalDurationSpan = document.getElementById('totalDuration');
+            const totalCostSpan = document.getElementById('totalCost');
+            const bookBtn = document.getElementById('bookNowBtn');
+
+            if (!summaryDiv || !summaryDetails || !totalDurationSpan || !totalCostSpan || !bookBtn) return;
+
+            let totalDuration = baseDuration;
+            let totalCost = basePrice;
+
+            let summaryHTML = `
+        <div class="summary-row">
+            <span>${selectedTier.name}</span>
+            <span>${selectedTier.duration}h - $${selectedTier.price}</span>
+        </div>
+    `;
+
+            selectedAddons.forEach(addon => {
+                totalDuration += addon.duration;
+                totalCost += addon.price;
+                const priceText = addon.price === 0 ? 'Included' : `$${addon.price}`;
+                summaryHTML += `
+            <div class="summary-row">
+                <span>${addon.name}</span>
+                <span>${addon.duration}h - ${priceText}</span>
+            </div>
+        `;
+            });
+
+            summaryDetails.innerHTML = summaryHTML;
+            totalDurationSpan.textContent = `${totalDuration} hours`;
+            totalCostSpan.textContent = `$${totalCost}`;
+
+            summaryDiv.style.display = 'block';
+
+            // Clear existing event listeners by cloning the button
+            const newBookBtn = bookBtn.cloneNode(true);
+            bookBtn.parentNode.replaceChild(newBookBtn, bookBtn);
+
+            // Enable/disable button based on validation
+            newBookBtn.disabled = !validateBooking();
+
+            // Add single click handler
+            newBookBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log('Button clicked!');
+
+                if (validateBooking()) {
+                    openCalendlyPopup(totalDuration, totalCost);
+                } else {
+                    showError('Please complete all required selections before booking.');
+                }
+            });
+        }
+
+        function openCalendlyPopup(totalDuration, totalCost) {
+            const eventType = getCalendlyEventType(totalDuration);
+            const calendlyUrl = `https://calendly.com/nailzbymaze/${eventType}`;
+
+            console.log('Booking details:', {
+                service: selectedTier.name,
+                addons: selectedAddons.map(a => a.name),
+                duration: totalDuration,
+                cost: totalCost,
+                eventType: eventType,
+                calendlyUrl: calendlyUrl
+            });
+
+            try {
+                if (typeof Calendly === 'undefined') {
+                    throw new Error('Calendly widget not loaded');
+                }
+
+                const prefillData = {
+                    name: '',
+                    email: '',
+                    customAnswers: {
+                        a1: selectedTier.name,
+                        a2: selectedAddons.length > 0 ? selectedAddons.map(addon => addon.name).join(', ') : 'None',
+                        a3: `${totalDuration} hours`,
+                        a4: `$${totalCost}`,
+                    }
+                };
+
+                Calendly.initPopupWidget({
+                    url: calendlyUrl,
+                    prefill: prefillData
+                });
+
+                const bookBtn = document.getElementById('bookNowBtn');
+                const originalContent = bookBtn.innerHTML;
+                bookBtn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Opening Booking...';
+                bookBtn.disabled = true;
+
+                setTimeout(() => {
+                    bookBtn.innerHTML = originalContent;
+                    bookBtn.disabled = false;
+                }, 3000);
+
+                showSuccess(`Booking popup opened for ${totalDuration}-hour appointment!`);
+
+            } catch (error) {
+                console.error('Calendly error:', error);
+                const fallbackUrl = `${calendlyUrl}?hide_landing_page_details=1`;
+                window.open(fallbackUrl, '_blank', 'noopener,noreferrer');
+                showSuccess('Opened booking calendar in new tab. Complete your booking there!');
+            }
+        }
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NailzbyMaze - Certified Nail Technician in OC</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Calendly widget script -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-red: #C15648;
+            --primary-green: #85A073;
+            --primary-beige: #EDEBD1;
+            --primary-brown: #523B20;
+            --error-color: #dc3545;
+            --success-color: #28a745;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: var(--primary-brown);
+            background-color: var(--primary-beige);
+        }
+
+        /* Skip link for accessibility */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-brown);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 10000;
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* Header */
+        header {
+            background: var(--primary-beige);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(82, 59, 32, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-green);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-brown);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-red);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--primary-red);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Mobile menu button */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-brown);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-beige) 100%);
+            color: var(--primary-brown);
+            padding: 120px 2rem 80px;
+            text-align: center;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            color: var(--primary-green);
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background: var(--primary-green);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(133, 160, 115, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(133, 160, 115, 0.4);
+            background: var(--primary-brown);
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary-green);
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background: var(--primary-green);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* About Section */
+        .about {
+            background: white;
+            padding: 80px 2rem;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .credentials {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .credential {
+            background: var(--primary-beige);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            min-width: 200px;
+            border: 2px solid var(--primary-green);
+        }
+
+        .credential i {
+            font-size: 2rem;
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(82, 59, 32, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--primary-green);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(82, 59, 32, 0.15);
+        }
+
+        .service-card h3 {
+            color: var(--primary-green);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .service-card p {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .service-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid var(--primary-beige);
+            font-weight: bold;
+        }
+
+        .duration {
+            color: var(--primary-green);
+        }
+
+        .price {
+            color: var(--primary-green);
+            font-size: 1.2rem;
+        }
+
+        /* Booking Section */
+        .booking {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-beige) 100%);
+            color: var(--primary-brown);
+            text-align: center;
+            padding: 80px 2rem;
+        }
+
+        .booking h2 {
+            color: var(--primary-brown);
+        }
+
+        .booking h2::after {
+            background: var(--primary-green);
+        }
+
+        .booking-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .booking-step {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(82, 59, 32, 0.1);
+            position: relative;
+        }
+
+        .booking-note {
+            background: rgba(193, 86, 72, 0.1);
+            border: 2px solid var(--primary-red);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+
+        .booking-note h4 {
+            color: var(--primary-red);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .step-title {
+            color: var(--primary-green);
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Policies Section */
+        .policies {
+            background: white;
+            padding: 80px 2rem;
+        }
+
+        .policies-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .policy-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .policy-card {
+            background: var(--primary-beige);
+            padding: 2rem;
+            border-radius: 20px;
+            border-left: 5px solid var(--primary-green);
+            box-shadow: 0 5px 15px rgba(82, 59, 32, 0.1);
+        }
+
+        .policy-card h3 {
+            color: var(--primary-green);
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .policy-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .policy-card li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .policy-card li::before {
+            content: '•';
+            color: var(--primary-green);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        .policy-highlight {
+            background: var(--primary-green);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .policy-note {
+            background: rgba(193, 86, 72, 0.1);
+            border: 2px solid var(--primary-red);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+
+        .policy-note h4 {
+            color: var(--primary-red);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Mobile responsive for policies */
+        .policy-grid {
+            grid-template-columns: 1fr;
+        }
+
+        /* Error and success messages */
+        .error-message {
+            background: #f8d7da;
+            color: var(--error-color);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border: 1px solid #f5c6cb;
+            display: none;
+        }
+
+        .success-message {
+            background: #d4edda;
+            color: var(--success-color);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+            border: 1px solid #c3e6cb;
+            display: none;
+        }
+
+        /* Step indicator */
+        .step-indicator {
+            position: absolute;
+            top: -15px;
+            left: 2rem;
+            background: var(--primary-green);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .booking-step.completed .step-indicator {
+            background: var(--success-color);
+        }
+
+        /* Date Selection */
+        .date-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 0.75rem;
+            margin: 2rem 0;
+        }
+
+        .date-option {
+            background: var(--primary-beige);
+            padding: 1rem 0.5rem;
+            border-radius: 12px;
+            border: 2px solid var(--primary-green);
+            font-weight: bold;
+            color: var(--primary-brown);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            min-height: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .date-option:hover:not(.disabled) {
+            background: var(--primary-green);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .date-option.selected {
+            background: var(--primary-green);
+            color: white;
+            box-shadow: 0 4px 15px rgba(133, 160, 115, 0.4);
+        }
+
+        .date-option.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #ccc;
+            border-color: #999;
+        }
+
+        .date-option.disabled:hover {
+            background: #ccc;
+            color: var(--primary-brown);
+            transform: none;
+        }
+
+        /* Time slots */
+        .time-slots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 0.75rem;
+            margin: 2rem 0;
+        }
+
+        .time-slot {
+            background: var(--primary-beige);
+            padding: 1rem 0.5rem;
+            border-radius: 12px;
+            border: 2px solid var(--primary-green);
+            font-weight: bold;
+            color: var(--primary-brown);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .time-slot:hover:not(.disabled) {
+            background: var(--primary-green);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .time-slot.selected {
+            background: var(--primary-green);
+            color: white;
+            box-shadow: 0 4px 15px rgba(133, 160, 115, 0.4);
+        }
+
+        .time-slot.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: #ccc;
+            border-color: #999;
+        }
+
+        .service-selection {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .service-selection.active {
+            display: block;
+        }
+
+        .tier-selection {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .tier-option {
+            background: var(--primary-beige);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 2px solid var(--primary-green);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .tier-option:hover,
+        .tier-option.selected {
+            background: var(--primary-green);
+            color: white;
+        }
+
+        .tier-option h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .tier-duration {
+            font-weight: bold;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .addons-section {
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        .addon-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            background: var(--primary-beige);
+            margin: 0.5rem 0;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .addon-item.selected {
+            border-color: var(--primary-green);
+            background: rgba(133, 160, 115, 0.1);
+        }
+
+        /* Nail Art Tier Dropdown Styles */
+        .tier-dropdown {
+            position: relative;
+            margin: 1.5rem 0;
+        }
+
+        .tier-dropdown-button {
+            width: 100%;
+            background: var(--primary-beige);
+            border: 2px solid var(--primary-green);
+            border-radius: 15px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tier-dropdown-button:hover,
+        .tier-dropdown-button.active {
+            background: rgba(133, 160, 115, 0.1);
+            border-color: var(--primary-green);
+        }
+
+        .tier-dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 2px solid var(--primary-green);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(82, 59, 32, 0.1);
+            z-index: 100;
+            margin-top: 0.5rem;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .tier-dropdown-content.show {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .tier-option-dropdown {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--primary-beige);
+            cursor: pointer;
+            transition: background 0.3s ease;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .tier-option-dropdown:last-child {
+            border-bottom: none;
+        }
+
+        .tier-option-dropdown:hover {
+            background: var(--primary-beige);
+        }
+
+        .tier-option-dropdown.selected {
+            background: rgba(133, 160, 115, 0.1);
+            border-left: 4px solid var(--primary-green);
+        }
+
+        .tier-image {
+            width: 120px;
+            height: 90px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 2px solid var(--primary-beige);
+            flex-shrink: 0;
+        }
+
+        .tier-details {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .tier-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .tier-price-duration {
+            font-size: 0.9rem;
+            color: var(--primary-brown);
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
+
+        .tier-description {
+            color: var(--primary-brown);
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .tier-dropdown-button.active .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .addon-checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--primary-green);
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .addon-checkbox.checked {
+            background: var(--primary-green);
+        }
+
+        .addon-checkbox.checked::after {
+            content: '✓';
+            color: white;
+            font-size: 14px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .addon-details {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .addon-name {
+            font-weight: bold;
+            color: var(--primary-brown);
+        }
+
+        .addon-time {
+            color: var(--primary-green);
+            font-size: 0.9rem;
+        }
+
+        .addon-price {
+            color: var(--primary-green);
+            font-weight: bold;
+            margin-left: 1rem;
+            flex-shrink: 0;
+        }
+
+        .appointment-summary {
+            background: var(--primary-green);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem 0;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .summary-total {
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-top: 2px solid rgba(255, 255, 255, 0.3);
+            margin-top: 1rem;
+            padding-top: 1rem;
+        }
+
+        .book-now-btn {
+            background: white;
+            color: var(--primary-green);
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1.5rem;
+            width: 100%;
+        }
+
+        .book-now-btn:hover:not(:disabled) {
+            background: var(--primary-beige);
+            transform: translateY(-2px);
+        }
+
+        .book-now-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .book-now-btn:focus {
+            outline: 3px solid rgba(255, 255, 255, 0.5);
+            outline-offset: 2px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            background: white;
+            padding: 80px 2rem;
+            text-align: center;
+        }
+
+        .portfolio-link {
+            display: inline-block;
+            background: var(--primary-green);
+            color: white;
+            padding: 1.5rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .portfolio-link:hover {
+            background: var(--primary-beige);
+            color: var(--primary-green);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-brown);
+            color: var(--primary-beige);
+            text-align: center;
+            padding: 3rem 2rem 1rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--primary-beige);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-green);
+        }
+
+        /* Mobile Responsivity */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--primary-beige);
+                flex-direction: column;
+                padding: 1rem 2rem;
+                box-shadow: 0 4px 10px rgba(82, 59, 32, 0.1);
+                gap: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 60px 1rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .credentials {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .booking-step {
+                padding: 1.5rem 1rem;
+            }
+
+            .date-grid {
+                grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+                gap: 0.5rem;
+            }
+
+            .time-slots-grid {
+                grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+                gap: 0.5rem;
+            }
+
+            .tier-selection {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .addon-item {
+                flex-wrap: wrap;
+                padding: 1rem 0.75rem;
+                min-height: 60px;
+                width: 100%;
+            }
+
+            .addon-details {
+                margin-right: 0.5rem;
+            }
+
+            .addon-price {
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+
+            .summary-row {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .book-now-btn {
+                font-size: 1rem;
+                padding: 1rem 2rem;
+            }
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Focus styles for accessibility */
+        .date-option:focus,
+        .time-slot:focus,
+        .tier-option:focus,
+        .addon-item:focus {
+            outline: 3px solid var(--primary-red);
+            outline-offset: 2px;
+        }
+
+        .nav-links a:focus {
+            outline: 2px solid var(--primary-red);
+            outline-offset: 4px;
+        }
+
+        /* Screen reader only content */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect
+        }
